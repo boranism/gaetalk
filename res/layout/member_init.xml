@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MemberInit">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="회원정보를 입력해주세요"
+        android:textSize="30sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dog" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/edtMemInitHumanName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="견주 이름" />
+
+    <EditText
+        android:id="@+id/edtMemInitName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="반려견 이름" />
+
+    <EditText
+        android:id="@+id/edtMemInitGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="성별" />
+
+    <EditText
+        android:id="@+id/edtMemInitBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="생년월일"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/edtMemInitBreed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="견종" />
+
+    <EditText
+        android:id="@+id/edtMemInitPersonality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="성격 및 특이사항" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spGu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spDong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMemInitCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인" />
+
+    <LinearLayout
+        android:id="@+id/linearInitButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnTakePicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사진촬영" />
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="갤러리" />
+    </LinearLayout>
+
+</LinearLayout>
